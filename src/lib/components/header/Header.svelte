@@ -21,11 +21,13 @@
             <li><a href="/" class="hover:text-indigo-400">Panitia</a></li>
             <li><a href="/" class="hover:text-indigo-400">Tentang</a></li>
         </ul>
-        <button
-            class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded"
-        >
-            Submit
-        </button>
+        <a target="_blank" href="https://forms.gle/gExfAGzeBPgkQSWb9">
+            <button
+                class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded"
+            >
+                Submit
+            </button>
+        </a>
     </nav>
 
     <!-- Hero Main -->

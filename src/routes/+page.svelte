@@ -1,5 +1,26 @@
 <script>
     import Pamflet from "$lib/assets/pamflet.jpeg";
+
+    const scopes = [
+        "Fisika Teori",
+        "Fisika Komputasi",
+        "Fisika Matematika",
+        "Fisika Optik",
+        "Fisika Spektroskopi",
+        "Fisika Material",
+        "Fisika Semikonduktor",
+        "Fisika Elektronika",
+        "Fisika Instrumentasi",
+        "Biomaterial",
+        "Nanoteknologi",
+        "Fisika Lingkungan",
+        "Fisika Oseanografi",
+        "Pendidikan Fisika",
+        "Fisika Bumi",
+        "Sains Atmosfer",
+        "Fisika Nuklir",
+        "Fisika Medik",
+    ];
 </script>
 
 <svelte:head>
@@ -55,9 +76,9 @@
     </div>
 
     <!-- Background Section -->
-    <div class="p-3 lg:p-6">
+    <div class="p-3 lg:p-6 bg-slate-100">
         <h1
-            class="mb-5 text-3xl font-bold text-white bg-blue-800 rounded p-2 w-fit"
+            class="mb-5 text-2xl lg:text-3xl font-bold text-white bg-blue-800 rounded p-2 w-fit"
         >
             Latar Belakang
         </h1>
@@ -111,6 +132,22 @@
                 jaringan profesional yang berguna untuk kemajuan ilmu
                 pengetahuan.
             </p>
+        </div>
+    </div>
+
+    <!-- Bidang Kajian Section -->
+    <div class="p-3 lg:p-6">
+        <h1 class="mb-5 text-2xl lg:text-3xl font-bold rounded p-2 w-fit">
+            Bidang Kajian Penelitian
+        </h1>
+        <div class="grid grid-cols-3 justify-items-center gap-y-7">
+            {#each scopes as scope}
+                <div
+                    class="bg-blue-800 text-white w-64 font-semibold text-base p-2 shadow-md rounded text-center"
+                >
+                    {scope}
+                </div>
+            {/each}
         </div>
     </div>
 </div>
