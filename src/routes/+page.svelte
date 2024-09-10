@@ -14,7 +14,7 @@
         <img src={Pamflet} alt="Pamflet SNF 2024" class="w-[550px] h-auto" />
         <div class="text-justify flex flex-col lg:items-start items-center">
             <h1
-                class="text-xl lg:text-4xl font-bold mb-5 bg-blue-500 text-white rounded p-3 w-fit"
+                class="text-xl lg:text-4xl font-bold mb-5 bg-blue-800 text-white rounded p-3 w-fit"
             >
                 Seminar Nasional Fisika (SNF) 2024
             </h1>
@@ -34,7 +34,8 @@
                 jaringan profesional yang berguna untuk kemajuan ilmu
                 pengetahuan.
             </p>
-            <button class="flex bg-blue-500 text-white rounded font-medium p-2"
+            <button
+                class="flex bg-blue-800 hover:bg-blue-900 text-white rounded font-semibold p-2"
                 >Download Pamflet
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -54,19 +55,62 @@
     </div>
 
     <!-- Background Section -->
-    <div class="bg-blue-500 text-white p-6">
-        <h1 class="text-3xl font-bold mb-5">Latar Belakang</h1>
-        <p class="text-lg leading-relaxed italic">
-            Seminar Nasional Fisika (SNF) merupakan kegiatan tahunan yang
-            diselenggarakan oleh Departemen Fisika FMIPA Universitas Hasanuddin.
-            Seminar ini bertujuan untuk memperkenalkan dan memperluas wawasan
-            serta pengetahuan dalam bidang fisika. SNF juga menjadi wadah bagi
-            para akademisi, peneliti, dan mahasiswa untuk berbagi pengetahuan
-            dan pengalaman dalam bidang fisika. Dengan mengikuti SNF, peserta
-            diharapkan dapat memperoleh informasi terbaru tentang perkembangan
-            ilmu pengetahuan dan teknologi dalam bidang fisika. Selain itu, SNF
-            juga menjadi ajang untuk memperluas jaringan kerjasama antar
-            peneliti, akademisi, dan mahasiswa dalam bidang fisika.
-        </p>
+    <div class="p-6">
+        <h1
+            class="mb-5 text-3xl font-bold text-white bg-yellow-600 rounded p-2 w-fit"
+        >
+            Latar Belakang
+        </h1>
+        <div class="flex flex-col gap-y-3 text-lg font-medium">
+            <p>
+                Para ahli diharapkan untuk melakukan riset dalam berbagai
+                disiplin ilmu sehingga bisa menjadikan ilmu sains khususnya ilmu
+                fisika menjadi penguat utama dalam riset. Ketika dunia bergulat
+                dengan kebutuhan mendesak untuk melakukan transisi menuju sumber
+                energi berkelanjutan, peran fisika dalam mengatasi tantangan
+                yang dihadapi oleh industri utilitas menjadi semakin penting.
+                Untuk menavigasi lanskap yang kompleks ini, perusahaan utilitas
+                harus beradaptasi dan mengadopsi solusi inovatif yang
+                memanfaatkan prinsip-prinsip dasar fisika. Salah satu bidang
+                utama di mana fisika memainkan peran penting adalah dalam
+                pengembangan teknologi elektronika daya.
+            </p>
+            <p>
+                Fisika sering kali terlibat dalam penelitian dan pengembangan
+                solusi untuk tantangan global seperti energi, lingkungan, dan
+                kesehatan. Seminar ini bisa menjadi wadah untuk mendiskusikan
+                bagaimana fisika dapat berkontribusi pada solusi isu-isu besar
+                tersebut. Kompleksitas ilmu Fisika sebagai core of science
+                dengan berbagai fenomenanya sangat dapat diimplementasikan di
+                berbagai topik riset. Untuk itu para Fisikawan harus mampu
+                berfikir secara inovatif dan strategis dalam menyeimbangkan
+                antara teori dan praktek nyata sehingga hasilnya dapat
+                dimanfaatkan untuk kemaslahatan umat manusia. Melalui prinsip
+                Tri Dharma Perguruan Tinggi, meliputi pendidikan, penelitian,
+                dan pengabdian pada masyarakat, para akademisi dan peneliti
+                diharapkan tetap berkontribsi secara nyata untuk mempublikasikan
+                hasil penelitiannya agar kepakarannya sebagai peneliti
+                meningkat. Kualitas penelitian dapat dilihat dari banyaknya
+                akademisi dan peneliti yang mempublikasikan karyanya di jurnal
+                internasional terindeks sehingga dapat menjadi sumber bahan ajar
+                dalam pengembangan kurikulum (K23) di Unhas.
+            </p>
+            <p>
+                Berdasarkan kenyataan inilah dan menimbang KEPUTUSAN REKTOR
+                UNIVERSITAS HASANUDDIN NOMOR 01702/UN4.1/KEP/2024, Departemen
+                Fisika FMIPA Universitas Hasanuddin akan menyelenggarakan
+                Seminar Nasional Fisika (SNF) Makassar 2024. Seminar nasional
+                fisika menjadi forum untuk berbagi pengetahuan terbaru,
+                penelitian, dan temuan dalam bidang fisika. Ini memungkinkan
+                para akademisi, peneliti, dan mahasiswa untuk memperluas wawasan
+                mereka dan memperbarui pengetahuan mereka tentang perkembangan
+                terbaru dalam fisika. Seminar ini menyediakan kesempatan bagi
+                para ilmuwan dan peneliti untuk bertemu, berdiskusi, dan
+                berkolaborasi dengan rekan sejawat dari berbagai institusi dan
+                daerah. Ini dapat mendorong kerjasama penelitian dan membangun
+                jaringan profesional yang berguna untuk kemajuan ilmu
+                pengetahuan.
+            </p>
+        </div>
     </div>
 </div>
