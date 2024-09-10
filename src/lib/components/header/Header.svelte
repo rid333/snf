@@ -1,6 +1,6 @@
 <script>
     import Logo from "$lib/assets/pngegg.png";
-    import Unhas from "$lib/assets/unhas.jpg";
+    import Unhas from "$lib/assets/unhas2.jpg";
 </script>
 
 <section
@@ -16,9 +16,10 @@
     <!-- Navbar -->
     <nav class="flex justify-between items-center p-6 z-10">
         <img src={Logo} alt="Fisika" class="w-10 h-10" />
-        <ul class="flex space-x-8">
+        <ul class="flex space-x-8 font-semibold">
             <li><a href="/" class="hover:text-indigo-400">Home</a></li>
-            <li><a href="/" class="hover:text-indigo-400">About</a></li>
+            <li><a href="/" class="hover:text-indigo-400">Panitia</a></li>
+            <li><a href="/" class="hover:text-indigo-400">Tentang</a></li>
         </ul>
         <button
             class="bg-blue-600 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded"
