@@ -6,7 +6,7 @@
     <title>Seminar Nasional Fisika | Universitas Hasanuddin</title>
 </svelte:head>
 
-<div id="main">
+<div id="main" class="flex flex-col gap-y-4">
     <!-- Pamflet and Intro Section -->
     <div
         class="flex flex-col lg:flex-row p-6 gap-x-8 gap-y-4 justify-center items-center"
@@ -61,7 +61,7 @@
         >
             Latar Belakang
         </h1>
-        <div class="flex flex-col gap-y-3 text-base lg:text-lg font-medium">
+        <div class="flex flex-col gap-y-3 text-base lg:text-lg text-justify">
             <p>
                 Para ahli diharapkan untuk melakukan riset dalam berbagai
                 disiplin ilmu sehingga bisa menjadikan ilmu sains khususnya ilmu
