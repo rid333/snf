@@ -57,11 +57,11 @@
     <!-- Background Section -->
     <div class="p-6">
         <h1
-            class="mb-5 text-3xl font-bold text-white bg-yellow-600 rounded p-2 w-fit"
+            class="mb-5 text-3xl font-bold text-white bg-blue-800 rounded p-2 w-fit"
         >
             Latar Belakang
         </h1>
-        <div class="flex flex-col gap-y-3 text-lg font-medium">
+        <div class="flex flex-col gap-y-3 text-base lg:text-lg font-medium">
             <p>
                 Para ahli diharapkan untuk melakukan riset dalam berbagai
                 disiplin ilmu sehingga bisa menjadikan ilmu sains khususnya ilmu
