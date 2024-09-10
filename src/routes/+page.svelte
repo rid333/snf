@@ -9,7 +9,7 @@
 <div id="main" class="flex flex-col gap-y-4">
     <!-- Pamflet and Intro Section -->
     <div
-        class="flex flex-col lg:flex-row p-6 gap-x-8 gap-y-4 justify-center items-center"
+        class="flex flex-col lg:flex-row p-3 lg:p-6 gap-x-8 gap-y-4 justify-center items-center"
     >
         <img src={Pamflet} alt="Pamflet SNF 2024" class="w-[550px] h-auto" />
         <div class="text-justify flex flex-col lg:items-start items-center">
@@ -55,7 +55,7 @@
     </div>
 
     <!-- Background Section -->
-    <div class="p-6">
+    <div class="p-3 lg:p-6">
         <h1
             class="mb-5 text-3xl font-bold text-white bg-blue-800 rounded p-2 w-fit"
         >
