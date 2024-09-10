@@ -7,15 +7,18 @@
 </svelte:head>
 
 <div id="main">
-    <div class="flex p-6 gap-x-8 justify-center items-center">
+    <!-- Pamflet and Intro Section -->
+    <div
+        class="flex flex-col lg:flex-row p-6 gap-x-8 gap-y-4 justify-center items-center"
+    >
         <img src={Pamflet} alt="Pamflet SNF 2024" class="w-[550px] h-auto" />
-        <div class="text-justify">
+        <div class="text-justify flex flex-col lg:items-start items-center">
             <h1
-                class="text-4xl font-bold mb-5 bg-blue-500 text-white rounded p-3 w-fit"
+                class="text-xl lg:text-4xl font-bold mb-5 bg-blue-500 text-white rounded p-3 w-fit"
             >
                 Seminar Nasional Fisika (SNF) 2024
             </h1>
-            <p class="text-lg leading-relaxed italic mb-5">
+            <p class="text-base lg:text-lg leading-relaxed italic mb-5">
                 Berdasarkan kenyataan inilah dan menimbang KEPUTUSAN REKTOR
                 UNIVERSITAS HASANUDDIN NOMOR 01702/UN4.1/KEP/2024, Departemen
                 Fisika FMIPA Universitas Hasanuddin akan menyelenggarakan
@@ -48,5 +51,22 @@
                 </svg>
             </button>
         </div>
+    </div>
+
+    <!-- Background Section -->
+    <div class="bg-blue-500 text-white p-6">
+        <h1 class="text-3xl font-bold mb-5">Latar Belakang</h1>
+        <p class="text-lg leading-relaxed italic">
+            Seminar Nasional Fisika (SNF) merupakan kegiatan tahunan yang
+            diselenggarakan oleh Departemen Fisika FMIPA Universitas Hasanuddin.
+            Seminar ini bertujuan untuk memperkenalkan dan memperluas wawasan
+            serta pengetahuan dalam bidang fisika. SNF juga menjadi wadah bagi
+            para akademisi, peneliti, dan mahasiswa untuk berbagi pengetahuan
+            dan pengalaman dalam bidang fisika. Dengan mengikuti SNF, peserta
+            diharapkan dapat memperoleh informasi terbaru tentang perkembangan
+            ilmu pengetahuan dan teknologi dalam bidang fisika. Selain itu, SNF
+            juga menjadi ajang untuk memperluas jaringan kerjasama antar
+            peneliti, akademisi, dan mahasiswa dalam bidang fisika.
+        </p>
     </div>
 </div>
