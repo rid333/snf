@@ -2,6 +2,10 @@
     <title>Seminar Nasional Fisika | Universitas Hasanuddin</title>
 </svelte:head>
 
-<div class="flex flex-col items-center gap-10">
-    <h1 class="text-5xl">Seminar Nasional Fisika</h1>
+<div id="main">
+    <h1 class="text-4xl font-bold text-center mt-10">
+        Seminar Nasional Fisika
+    </h1>
+    <p class="text-center mt-5">Universitas Hasanuddin</p>
+    <p class="text-center mt-5">2024</p>
 </div>
