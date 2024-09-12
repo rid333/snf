@@ -70,7 +70,7 @@
     <title>Seminar Nasional Fisika | Universitas Hasanuddin</title>
 </svelte:head>
 
-<div class="fixed bottom-4 right-4">
+<div class="fixed bottom-4 right-4 z-50">
     <button
         class="bg-blue-800 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-lg"
     >
@@ -108,7 +108,7 @@
                 kemajuan ilmu pengetahuan.
             </p>
             <button
-                class="flex bg-blue-800 hover:bg-blue-900 lg:text-sm text-white font-medium p-2"
+                class="flex bg-blue-800 hover:bg-blue-900 text-sm text-white font-semibold p-2"
                 >Download Pamflet
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
