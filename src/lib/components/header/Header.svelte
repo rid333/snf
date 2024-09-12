@@ -23,7 +23,7 @@
         </ul>
         <a target="_blank" href="https://forms.gle/w7Z23vkLp3rkZ3cq8">
             <button
-                class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-4 rounded"
+                class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-4"
             >
                 Submit
             </button>
@@ -44,7 +44,7 @@
         <div class="flex space-x-4">
             <a
                 href="#main"
-                class="flex items-center px-6 py-3 border-2 border-yellow-600 hover:bg-yellow-600 text-white font-semibold rounded-md"
+                class="flex items-center px-6 py-3 border-2 border-yellow-600 hover:bg-yellow-600 text-white font-semibold"
                 >Baca Selengkapnya
                 <svg
                     xmlns="http://www.w3.org/2000/svg"

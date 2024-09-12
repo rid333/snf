@@ -43,21 +43,59 @@
             image: Djati,
         },
     ];
+
+    const timelines = [
+        {
+            date: "10 Oktober 2024",
+            title: "Pengumuman Seminar",
+            description: "Pengumuman Seminar Nasional Fisika 2024",
+        },
+        {
+            date: "10 November 2024",
+            title: "Pendaftaran Seminar",
+            description: "Pendaftaran Seminar Nasional Fisika 2024",
+        },
+        {
+            date: "10 Desember 2024",
+            title: "Pengumpulan Abstrak",
+            description: "Pengumpulan Abstrak Seminar Nasional Fisika 2024",
+        },
+        {
+            date: "10 Januari 2025",
+            title: "Pengumuman Abstrak",
+            description: "Pengumuman Abstrak Seminar Nasional Fisika 2024",
+        },
+        {
+            date: "10 Februari 2025",
+            title: "Pengumpulan Full Paper",
+            description: "Pengumpulan Full Paper Seminar Nasional Fisika 2024",
+        },
+        {
+            date: "10 Maret 2025",
+            title: "Pengumuman Full Paper",
+            description: "Pengumuman Full Paper Seminar Nasional Fisika 2024",
+        },
+        {
+            date: "10 April 2025",
+            title: "Pelaksanaan Seminar",
+            description: "Pelaksanaan Seminar Nasional Fisika 2024",
+        },
+    ];
 </script>
 
 <svelte:head>
     <title>Seminar Nasional Fisika | Universitas Hasanuddin</title>
 </svelte:head>
 
-<div id="main" class="flex flex-col gap-y-20 py-20">
+<div id="main" class="flex flex-col">
     <!-- Pamflet and Intro Section -->
     <div
-        class="flex flex-col lg:flex-row lg:px-28 gap-x-8 gap-y-4 justify-center items-center"
+        class="flex flex-col lg:flex-row px-10 py-12 gap-x-8 gap-y-4 justify-center items-center"
     >
         <img src={Pamflet} alt="Pamflet SNF 2024" class="w-[500px] h-auto" />
         <div class="text-justify flex flex-col lg:items-start items-center">
             <h1
-                class="text-xl lg:text-4xl font-extrabold mb-5 text-gray-800 rounded w-fit uppercase"
+                class="text-xl lg:text-4xl font-extrabold mb-5 text-gray-800 w-fit uppercase"
             >
                 Seminar Nasional Fisika (SNF) 2024
             </h1>
@@ -80,7 +118,7 @@
                 pengetahuan.
             </p>
             <button
-                class="flex bg-blue-800 hover:bg-blue-900 lg:text-sm text-white rounded font-medium p-2"
+                class="flex bg-blue-800 hover:bg-blue-900 lg:text-sm text-white font-medium p-2"
                 >Download Pamflet
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -100,9 +138,9 @@
     </div>
 
     <!-- Background Section -->
-    <div class="flex flex-col justify-center items-center lg:px-20">
+    <div class="flex flex-col justify-center max-w-7xl mx-auto px-4 py-12">
         <h1
-            class="mb-5 text-2xl lg:text-4xl font-extrabold text-gray-800 uppercase"
+            class="mb-5 text-2xl lg:text-3xl font-bold text-gray-800 uppercase before:block before:w-24 before:h-3 before:mb-5 sm:before:mx-0 before:bg-gray-800"
         >
             Latar Belakang
         </h1>
@@ -162,60 +200,103 @@
     </div>
 
     <!-- Keynote Speaker Section -->
-    <div
-        class="relative flex flex-col justify-center items-center p-10 lg:px-20 lg:py-20"
-    >
-        <div class="bg-black opacity-50 absolute inset-0 z-10"></div>
+    <section class="relative flex flex-col justify-center pl-8 lg:pl-24 py-12">
+        <div class="bg-gray-950 opacity-90 absolute inset-0 z-10"></div>
         <img
             src={Tamfis}
             alt="Taman Fisika"
             class="absolute inset-0 w-full h-full object-cover z-0"
         />
         <h1
-            class="mb-5 text-2xl lg:text-4xl font-extrabold text-gray-100 lg:mb-20 uppercase z-10"
+            class="mb-12 text-2xl lg:text-3xl font-extrabold text-gray-200 uppercase z-10 before:block before:w-24 before:h-3 before:mb-5 sm:before:mx-0 before:bg-gray-200"
         >
             Keynote Speaker
         </h1>
-        <div class="flex flex-col lg:flex-row gap-x-10 gap-y-10 z-10">
+        <div class="flex flex-col lg:flex-row gap-x-24 gap-y-10 z-10">
             {#each speakers as speaker}
-                <div class="flex flex-col gap-y-4 justify-center">
+                <div class="flex flex-col gap-y-1 lg:gap-y-4">
                     <img
                         src={speaker.image}
                         alt={speaker.name}
-                        class="w-40 h-40 lg:w-72 lg:h-72 object-cover lg:mb-0 border-2 border-yellow-500"
+                        class="w-36 h-36 lg:w-60 lg:h-60 object-cover"
                     />
                     <div>
                         <p
-                            class="font-extrabold text-lg lg:text-2xl text-yellow-500 uppercase"
+                            class="font-semibold text-sm lg:text-base text-yellow-500"
                         >
                             {speaker.name}
                         </p>
-                        <p class="text-white font-medium text-base lg:text-xl">
+                        <p class="text-gray-200 text-xs font-bold lg:text-sm">
                             {speaker.title}
                         </p>
                     </div>
                 </div>
             {/each}
         </div>
-    </div>
+    </section>
 
     <!-- Bidang Kajian Section -->
-    <div class="flex flex-col justify-center items-center p-3 lg:p-6">
+    <section
+        class="flex flex-col justify-center items-center px-4 py-12 max-w-5xl mx-auto"
+    >
         <h1
-            class="mb-5 text-2xl lg:text-4xl font-extrabold text-blue-800 uppercase"
+            class="mb-10 text-2xl lg:text-3xl font-bold text-blue-800 uppercase"
         >
             Bidang Kajian Penelitian
         </h1>
         <div
-            class="grid grid-cols-2 lg:grid-cols-3 justify-items-center gap-y-7"
+            class="grid grid-cols-2 lg:grid-cols-3 justify-items-center gap-10"
         >
             {#each scopes as scope}
                 <div
-                    class="bg-blue-800 text-white w-64 font-semibold text-base p-2 shadow-md rounded text-center cursor-pointer"
+                    class="bg-blue-800 text-white w-64 font-semibold text-base p-2 shadow-md text-center cursor-pointer"
                 >
                     {scope}
                 </div>
             {/each}
         </div>
-    </div>
+    </section>
+
+    <!-- Timeline Section -->
+    <section class="bg-gray-100">
+        <div class="max-w-5xl px-4 py-12 mx-auto">
+            <div class="grid gap-4 mx-4 sm:grid-cols-12">
+                <div class="col-span-12 sm:col-span-3">
+                    <div
+                        class="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:mx-auto sm:before:mx-0 before:bg-yellow-500"
+                    >
+                        <h3 class="text-3xl font-semibold">
+                            Timeline kegiatan
+                        </h3>
+                        <span
+                            class="text-sm font-bold tracking-wider uppercase text-gray-600"
+                            >SNF 2024</span
+                        >
+                    </div>
+                </div>
+                <div class="relative col-span-12 px-4 space-y-6 sm:col-span-9">
+                    <div
+                        class="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:bg-gray-300"
+                    >
+                        <div
+                            class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:left-[-35px] sm:before:z-[1] before:bg-yellow-500"
+                        >
+                            <h3 class="text-xl font-semibold tracking-wide">
+                                Donec porta enim vel
+                            </h3>
+                            <time
+                                class="text-xs tracking-wide uppercase dark:text-gray-600"
+                                >Dec 2020</time
+                            >
+                            <p class="mt-3">
+                                Pellentesque feugiat ante at nisl efficitur, in
+                                mollis orci scelerisque. Interdum et malesuada
+                                fames ac ante ipsum primis in faucibus.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 </div>
