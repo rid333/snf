@@ -163,7 +163,7 @@
 
     <!-- Keynote Speaker Section -->
     <div
-        class="relative flex flex-col justify-center items-center p-3 lg:px-20 lg:py-20"
+        class="relative flex flex-col justify-center items-center p-10 lg:px-20 lg:py-20"
     >
         <div class="bg-black opacity-50 absolute inset-0 z-10"></div>
         <img
@@ -172,25 +172,25 @@
             class="absolute inset-0 w-full h-full object-cover z-0"
         />
         <h1
-            class="mb-5 text-2xl lg:text-4xl font-extrabold text-gray-100 mb-20 uppercase z-10"
+            class="mb-5 text-2xl lg:text-4xl font-extrabold text-gray-100 lg:mb-20 uppercase z-10"
         >
             Keynote Speaker
         </h1>
-        <div class="flex flex-col lg:flex-row gap-x-10 z-10">
+        <div class="flex flex-col lg:flex-row gap-x-10 gap-y-10 z-10">
             {#each speakers as speaker}
-                <div class="flex flex-col gap-y-4">
+                <div class="flex flex-col gap-y-4 justify-center">
                     <img
                         src={speaker.image}
                         alt={speaker.name}
-                        class="w-72 h-72 object-cover mb-3 lg:mb-0"
+                        class="w-40 h-40 lg:w-72 lg:h-72 object-cover lg:mb-0 border-2 border-yellow-500"
                     />
                     <div>
                         <p
-                            class="font-extrabold text-2xl text-yellow-500 uppercase"
+                            class="font-extrabold text-lg lg:text-2xl text-yellow-500 uppercase"
                         >
                             {speaker.name}
                         </p>
-                        <p class="text-white font-medium text-xl">
+                        <p class="text-white font-medium text-base lg:text-xl">
                             {speaker.title}
                         </p>
                     </div>
