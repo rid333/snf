@@ -90,32 +90,31 @@
 <div id="main" class="flex flex-col">
     <!-- Pamflet and Intro Section -->
     <div
-        class="flex flex-col lg:flex-row px-10 py-12 gap-x-8 gap-y-4 justify-center items-center"
+        class="flex flex-col lg:flex-row px-4 py-12 gap-x-8 gap-y-4 justify-center items-center"
     >
         <img src={Pamflet} alt="Pamflet SNF 2024" class="w-[500px] h-auto" />
         <div class="text-justify flex flex-col lg:items-start items-center">
             <h1
-                class="text-xl lg:text-4xl font-extrabold mb-5 text-gray-800 w-fit uppercase"
+                class="mb-5 text-2xl lg:text-3xl font-bold text-gray-800 uppercase before:block before:w-24 before:h-3 before:mb-5 sm:before:mx-0 before:bg-gray-800"
             >
                 Seminar Nasional Fisika (SNF) 2024
             </h1>
             <p
                 class="text-sm lg:text-base lg:leading-loose text-gray-800 italic mb-5"
             >
-                Berdasarkan kenyataan inilah dan menimbang KEPUTUSAN REKTOR
-                UNIVERSITAS HASANUDDIN NOMOR 01702/UN4.1/KEP/2024, Departemen
-                Fisika FMIPA Universitas Hasanuddin akan menyelenggarakan
-                Seminar Nasional Fisika (SNF) Makassar 2024. Seminar nasional
-                fisika menjadi forum untuk berbagi pengetahuan terbaru,
-                penelitian, dan temuan dalam bidang fisika. Ini memungkinkan
-                para akademisi, peneliti, dan mahasiswa untuk memperluas wawasan
-                mereka dan memperbarui pengetahuan mereka tentang perkembangan
-                terbaru dalam fisika. Seminar ini menyediakan kesempatan bagi
-                para ilmuwan dan peneliti untuk bertemu, berdiskusi, dan
-                berkolaborasi dengan rekan sejawat dari berbagai institusi dan
-                daerah. Ini dapat mendorong kerjasama penelitian dan membangun
-                jaringan profesional yang berguna untuk kemajuan ilmu
-                pengetahuan.
+                Menimbang KEPUTUSAN REKTOR UNIVERSITAS HASANUDDIN NOMOR
+                01702/UN4.1/KEP/2024, Departemen Fisika FMIPA Universitas
+                Hasanuddin akan menyelenggarakan Seminar Nasional Fisika (SNF)
+                Makassar 2024. Seminar nasional fisika menjadi forum untuk
+                berbagi pengetahuan terbaru, penelitian, dan temuan dalam bidang
+                fisika. Ini memungkinkan para akademisi, peneliti, dan mahasiswa
+                untuk memperluas wawasan mereka dan memperbarui pengetahuan
+                mereka tentang perkembangan terbaru dalam fisika. Seminar ini
+                menyediakan kesempatan bagi para ilmuwan dan peneliti untuk
+                bertemu, berdiskusi, dan berkolaborasi dengan rekan sejawat dari
+                berbagai institusi dan daerah. Ini dapat mendorong kerjasama
+                penelitian dan membangun jaringan profesional yang berguna untuk
+                kemajuan ilmu pengetahuan.
             </p>
             <button
                 class="flex bg-blue-800 hover:bg-blue-900 lg:text-sm text-white font-medium p-2"
@@ -236,20 +235,16 @@
     </section>
 
     <!-- Bidang Kajian Section -->
-    <section
-        class="flex flex-col justify-center items-center px-4 py-12 max-w-5xl mx-auto"
-    >
+    <section class="flex flex-col px-4 py-12 pl-8 lg:pl-24">
         <h1
-            class="mb-10 text-2xl lg:text-3xl font-bold text-blue-800 uppercase"
+            class="mb-10 text-2xl lg:text-3xl font-extrabold text-blue-800 uppercase before:block before:w-24 before:h-3 before:mb-5 sm:before:mx-0 before:bg-blue-800"
         >
             Bidang Kajian Penelitian
         </h1>
-        <div
-            class="grid grid-cols-2 lg:grid-cols-3 justify-items-center gap-10"
-        >
+        <div class="grid grid-cols-2 lg:grid-cols-3 gap-10">
             {#each scopes as scope}
                 <div
-                    class="bg-blue-800 text-white w-64 font-semibold text-base p-2 shadow-md text-center cursor-pointer"
+                    class="bg-blue-800 text-white lg:w-64 font-semibold text-xs lg:text-sm pl-4 p-2 shadow-md cursor-pointer"
                 >
                     {scope}
                 </div>
@@ -265,9 +260,7 @@
                     <div
                         class="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:mx-auto sm:before:mx-0 before:bg-yellow-500"
                     >
-                        <h3 class="text-3xl font-semibold">
-                            Timeline kegiatan
-                        </h3>
+                        <h3 class="text-3xl font-semibold">Timeline</h3>
                         <span
                             class="text-sm font-bold tracking-wider uppercase text-gray-600"
                             >SNF 2024</span
