@@ -1,5 +1,9 @@
 <script>
     import Pamflet from "$lib/assets/pamflet.jpeg";
+    import Wahyudi from "$lib/assets/wahyudi.jpeg";
+    import Sri from "$lib/assets/suryani.jpeg";
+    import Djati from "$lib/assets/djati.jpeg";
+    import Tamfis from "$lib/assets/tamanfisika.jpg";
 
     const scopes = [
         "Fisika Teori",
@@ -21,25 +25,45 @@
         "Fisika Nuklir",
         "Fisika Medik",
     ];
+
+    const speakers = [
+        {
+            name: "Prof. Dr. Ing. Wahyudi Basri",
+            title: "Badan Riset dan Inovasi Nasional (BRIN)",
+            image: Wahyudi,
+        },
+        {
+            name: "Prof. Dr. Sri Suryani, DEA",
+            title: "Departemen Fisika Universitas Hasanuddin",
+            image: Sri,
+        },
+        {
+            name: "Dr. Djati Handoko, Ph.D.",
+            title: "Departemen Fisika Universitas Indonesia",
+            image: Djati,
+        },
+    ];
 </script>
 
 <svelte:head>
     <title>Seminar Nasional Fisika | Universitas Hasanuddin</title>
 </svelte:head>
 
-<div id="main" class="flex flex-col gap-y-4">
+<div id="main" class="flex flex-col gap-y-20 py-20">
     <!-- Pamflet and Intro Section -->
     <div
-        class="flex flex-col lg:flex-row p-3 lg:p-6 gap-x-8 gap-y-4 justify-center items-center"
+        class="flex flex-col lg:flex-row lg:px-28 gap-x-8 gap-y-4 justify-center items-center"
     >
-        <img src={Pamflet} alt="Pamflet SNF 2024" class="w-[550px] h-auto" />
+        <img src={Pamflet} alt="Pamflet SNF 2024" class="w-[500px] h-auto" />
         <div class="text-justify flex flex-col lg:items-start items-center">
             <h1
-                class="text-xl lg:text-4xl font-bold mb-5 bg-blue-800 text-white rounded p-3 w-fit"
+                class="text-xl lg:text-4xl font-extrabold mb-5 text-gray-800 rounded w-fit uppercase"
             >
                 Seminar Nasional Fisika (SNF) 2024
             </h1>
-            <p class="text-base lg:text-lg leading-relaxed italic mb-5">
+            <p
+                class="text-sm lg:text-base lg:leading-loose text-gray-800 italic mb-5"
+            >
                 Berdasarkan kenyataan inilah dan menimbang KEPUTUSAN REKTOR
                 UNIVERSITAS HASANUDDIN NOMOR 01702/UN4.1/KEP/2024, Departemen
                 Fisika FMIPA Universitas Hasanuddin akan menyelenggarakan
@@ -56,7 +80,7 @@
                 pengetahuan.
             </p>
             <button
-                class="flex bg-blue-800 hover:bg-blue-900 text-white rounded font-semibold p-2"
+                class="flex bg-blue-800 hover:bg-blue-900 lg:text-sm text-white rounded font-medium p-2"
                 >Download Pamflet
                 <svg
                     xmlns="http://www.w3.org/2000/svg"
@@ -76,13 +100,15 @@
     </div>
 
     <!-- Background Section -->
-    <div class="p-3 lg:p-6 bg-slate-100">
+    <div class="flex flex-col justify-center items-center lg:px-20">
         <h1
-            class="mb-5 text-2xl lg:text-3xl font-bold text-white bg-blue-800 rounded p-2 w-fit"
+            class="mb-5 text-2xl lg:text-4xl font-extrabold text-gray-800 uppercase"
         >
             Latar Belakang
         </h1>
-        <div class="flex flex-col gap-y-3 text-base lg:text-lg text-justify">
+        <div
+            class="flex flex-col gap-y-3 text-gray-800 text-base lg:text-lg text-justify"
+        >
             <p>
                 Para ahli diharapkan untuk melakukan riset dalam berbagai
                 disiplin ilmu sehingga bisa menjadikan ilmu sains khususnya ilmu
@@ -135,15 +161,55 @@
         </div>
     </div>
 
+    <!-- Keynote Speaker Section -->
+    <div
+        class="relative flex flex-col justify-center items-center p-3 lg:px-20 lg:py-20"
+    >
+        <div class="bg-black opacity-50 absolute inset-0 z-10"></div>
+        <img
+            src={Tamfis}
+            alt="Taman Fisika"
+            class="absolute inset-0 w-full h-full object-cover z-0"
+        />
+        <h1
+            class="mb-5 text-2xl lg:text-4xl font-extrabold text-gray-100 mb-20 uppercase z-10"
+        >
+            Keynote Speaker
+        </h1>
+        <div class="flex flex-col lg:flex-row gap-x-10 z-10">
+            {#each speakers as speaker}
+                <div class="flex flex-col gap-y-4">
+                    <img
+                        src={speaker.image}
+                        alt={speaker.name}
+                        class="w-72 h-72 object-cover mb-3 lg:mb-0"
+                    />
+                    <div>
+                        <p
+                            class="font-extrabold text-2xl text-yellow-500 uppercase"
+                        >
+                            {speaker.name}
+                        </p>
+                        <p class="text-white font-medium text-xl">
+                            {speaker.title}
+                        </p>
+                    </div>
+                </div>
+            {/each}
+        </div>
+    </div>
+
     <!-- Bidang Kajian Section -->
-    <div class="p-3 lg:p-6">
-        <h1 class="mb-5 text-2xl lg:text-3xl font-bold rounded p-2 w-fit">
+    <div class="flex flex-col justify-center items-center p-3 lg:p-6">
+        <h1
+            class="mb-5 text-2xl lg:text-4xl font-extrabold text-blue-800 uppercase"
+        >
             Bidang Kajian Penelitian
         </h1>
         <div class="grid grid-cols-3 justify-items-center gap-y-7">
             {#each scopes as scope}
                 <div
-                    class="bg-blue-800 text-white w-64 font-semibold text-base p-2 shadow-md rounded text-center"
+                    class="bg-blue-800 text-white w-64 font-semibold text-base p-2 shadow-md rounded text-center cursor-pointer"
                 >
                     {scope}
                 </div>
