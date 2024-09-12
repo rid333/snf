@@ -46,39 +46,22 @@
 
     const timelines = [
         {
-            date: "10 Oktober 2024",
-            title: "Pengumuman Seminar",
-            description: "Pengumuman Seminar Nasional Fisika 2024",
+            date: "9 September - 18 Oktober 2024",
+            title: "Pendaftaran",
+            description:
+                "Pendaftaran peserta melalui situs resmi dengan mengisi formulir yang disediakan.",
         },
         {
-            date: "10 November 2024",
-            title: "Pendaftaran Seminar",
-            description: "Pendaftaran Seminar Nasional Fisika 2024",
-        },
-        {
-            date: "10 Desember 2024",
-            title: "Pengumpulan Abstrak",
-            description: "Pengumpulan Abstrak Seminar Nasional Fisika 2024",
-        },
-        {
-            date: "10 Januari 2025",
-            title: "Pengumuman Abstrak",
-            description: "Pengumuman Abstrak Seminar Nasional Fisika 2024",
+            date: "5 Oktober 2024",
+            title: "Batas Pengiriman Abstrak",
+            description:
+                "Batas akhir pengiriman abstrak untuk peserta yang telah mendaftar.",
         },
         {
             date: "10 Februari 2025",
-            title: "Pengumpulan Full Paper",
-            description: "Pengumpulan Full Paper Seminar Nasional Fisika 2024",
-        },
-        {
-            date: "10 Maret 2025",
-            title: "Pengumuman Full Paper",
-            description: "Pengumuman Full Paper Seminar Nasional Fisika 2024",
-        },
-        {
-            date: "10 April 2025",
-            title: "Pelaksanaan Seminar",
-            description: "Pelaksanaan Seminar Nasional Fisika 2024",
+            title: "Batas Pengiriman Artikel Penuh",
+            description:
+                "Batas akhir pengiriman artikel lengkap bagi peserta yang abstraknya disetujui.",
         },
     ];
 </script>
@@ -87,9 +70,17 @@
     <title>Seminar Nasional Fisika | Universitas Hasanuddin</title>
 </svelte:head>
 
+<div class="fixed bottom-4 right-4">
+    <button
+        class="bg-blue-800 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-lg"
+    >
+        Kontak Kami
+    </button>
+</div>
+
 <div id="main" class="flex flex-col">
     <!-- Pamflet and Intro Section -->
-    <div
+    <section
         class="flex flex-col lg:flex-row px-4 py-12 gap-x-8 gap-y-4 justify-center items-center"
     >
         <img src={Pamflet} alt="Pamflet SNF 2024" class="w-[500px] h-auto" />
@@ -134,10 +125,10 @@
                 </svg>
             </button>
         </div>
-    </div>
+    </section>
 
     <!-- Background Section -->
-    <div class="flex flex-col justify-center max-w-7xl mx-auto px-4 py-12">
+    <section class="flex flex-col justify-center max-w-7xl mx-auto px-4 py-12">
         <h1
             class="mb-5 text-2xl lg:text-3xl font-bold text-gray-800 uppercase before:block before:w-24 before:h-3 before:mb-5 sm:before:mx-0 before:bg-gray-800"
         >
@@ -196,7 +187,7 @@
                 pengetahuan.
             </p>
         </div>
-    </div>
+    </section>
 
     <!-- Keynote Speaker Section -->
     <section class="relative flex flex-col justify-center pl-8 lg:pl-24 py-12">
@@ -271,22 +262,22 @@
                     <div
                         class="col-span-12 space-y-12 relative px-4 sm:col-span-8 sm:space-y-8 sm:before:absolute sm:before:top-2 sm:before:bottom-0 sm:before:w-0.5 sm:before:-left-3 before:bg-gray-300"
                     >
-                        <div
-                            class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:left-[-35px] sm:before:z-[1] before:bg-yellow-500"
-                        >
-                            <h3 class="text-xl font-semibold tracking-wide">
-                                Donec porta enim vel
-                            </h3>
-                            <time
-                                class="text-xs tracking-wide uppercase dark:text-gray-600"
-                                >Dec 2020</time
+                        {#each timelines as timeline}
+                            <div
+                                class="flex flex-col sm:relative sm:before:absolute sm:before:top-2 sm:before:w-4 sm:before:h-4 sm:before:left-[-35px] sm:before:z-[1] before:bg-yellow-500"
                             >
-                            <p class="mt-3">
-                                Pellentesque feugiat ante at nisl efficitur, in
-                                mollis orci scelerisque. Interdum et malesuada
-                                fames ac ante ipsum primis in faucibus.
-                            </p>
-                        </div>
+                                <h3 class="text-xl font-semibold tracking-wide">
+                                    {timeline.title}
+                                </h3>
+                                <time
+                                    class="text-xs tracking-wide uppercase text-gray-800"
+                                    >{timeline.date}</time
+                                >
+                                <p class="mt-3">
+                                    {timeline.description}
+                                </p>
+                            </div>
+                        {/each}
                     </div>
                 </div>
             </div>
