@@ -206,7 +206,9 @@
         >
             Bidang Kajian Penelitian
         </h1>
-        <div class="grid grid-cols-3 justify-items-center gap-y-7">
+        <div
+            class="grid grid-cols-2 lg:grid-cols-3 justify-items-center gap-y-7"
+        >
             {#each scopes as scope}
                 <div
                     class="bg-blue-800 text-white w-64 font-semibold text-base p-2 shadow-md rounded text-center cursor-pointer"
