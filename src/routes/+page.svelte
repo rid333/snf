@@ -236,14 +236,16 @@
     </section>
 
     <!-- Timeline Section -->
-    <section class="bg-gray-100">
+    <section class="bg-gray-50">
         <div class="max-w-5xl px-4 py-12 mx-auto">
             <div class="grid gap-4 mx-4 sm:grid-cols-12">
                 <div class="col-span-12 sm:col-span-3">
                     <div
                         class="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:mx-auto sm:before:mx-0 before:bg-yellow-500"
                     >
-                        <h3 class="text-3xl font-semibold">Timeline</h3>
+                        <h3 class="text-3xl font-semibold uppercase">
+                            Timeline
+                        </h3>
                         <span
                             class="text-sm font-bold tracking-wider uppercase text-gray-600"
                             >SNF 2024</span
@@ -270,6 +272,175 @@
                                 </p>
                             </div>
                         {/each}
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section class="">
+        <div class="max-w-5xl px-4 py-12 mx-auto">
+            <div class="grid gap-4 mx-4 sm:grid-cols-12">
+                <div class="col-span-12 sm:col-span-3">
+                    <div
+                        class="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:mx-auto sm:before:mx-0 before:bg-blue-800"
+                    >
+                        <h3 class="text-3xl font-semibold">Get in touch</h3>
+                        <span
+                            class="text-sm font-bold tracking-wider uppercase text-gray-600"
+                            >Kontak kami</span
+                        >
+                    </div>
+                </div>
+                <div class="col-span-12 sm:col-span-9">
+                    <div class="grid gap-8 grid-cols-1 sm:grid-cols-2">
+                        <div
+                            class="bg-white p-6 rounded-lg border border-gray-300"
+                        >
+                            <h3 class="text-xl font-medium mb-2">
+                                Ajeng Anggreny Ibrahim, S.Pd., M.Si.
+                            </h3>
+                            <p class="text-gray-600 mt-2">+62 853-9933-6938</p>
+                        </div>
+                        <div
+                            class="bg-white p-6 rounded-lg border border-gray-300"
+                        >
+                            <h3 class="text-xl font-medium mb-2">
+                                Ayu Hardidanti Pratiwi, S.Pd.,M.Si
+                            </h3>
+                            <p class="text-gray-600 mt-2">+62 821-9447-8721</p>
+                        </div>
+                        <div
+                            class="bg-white p-6 rounded-lg border border-gray-300"
+                        >
+                            <h3 class="text-xl font-medium mb-2">E-Mail</h3>
+                            <a
+                                href="mailto:hello@example.com"
+                                class="text-blue-500 hover:underline"
+                                >snfunhas@gmail.com</a
+                            >
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-gray-50">
+        <div class="max-w-5xl px-4 py-12 mx-auto">
+            <div class="grid gap-4 mx-4 sm:grid-cols-12">
+                <!-- Title -->
+                <div class="col-span-12 sm:col-span-3">
+                    <div
+                        class="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:mx-auto sm:before:mx-0 before:bg-blue-800"
+                    >
+                        <h3 class="text-3xl font-semibold">Location</h3>
+                        <span
+                            class="text-sm font-bold tracking-wider uppercase text-gray-600"
+                            >Lokasi Seminar</span
+                        >
+                    </div>
+                </div>
+
+                <!-- Location Details -->
+                <div class="col-span-12 sm:col-span-9">
+                    <div class="grid gap-8 grid-cols-1 sm:grid-cols-2">
+                        <!-- Offline Venue with Google Maps -->
+                        <div
+                            class="bg-white p-6 rounded-lg border border-gray-300"
+                        >
+                            <div class="flex items-center mb-4">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-6 w-6 text-blue-500 mr-2"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M12 2C8.134 2 5 5.134 5 9c0 5.25 7 13 7 13s7-7.75 7-13c0-3.866-3.134-7-7-7z"
+                                    />
+                                    <circle
+                                        cx="12"
+                                        cy="9"
+                                        r="2"
+                                        fill="currentColor"
+                                    ></circle>
+                                </svg>
+                                <h3 class="text-xl font-semibold">
+                                    Universitas Hasanuddin
+                                </h3>
+                            </div>
+                            <p class="text-gray-600 mb-2">
+                                Departemen Fisika, FMIPA
+                            </p>
+                            <p class="text-gray-600">TBA</p>
+                            <p class="text-gray-600 mt-4">
+                                Tanggal: 26 Oktober, 2024
+                            </p>
+                            <p class="text-gray-600">
+                                Jam: 08:00 WITA - 17:00 WITA
+                            </p>
+
+                            <!-- Google Maps Embed -->
+                            <div class="mt-4">
+                                <iframe
+                                    class="w-full rounded-lg border border-gray-300"
+                                    src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3151.8354345093646!2d144.95592381568324!3d-37.81720997975195!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x6ad642af0f11fd81%3A0xf5770d6a8e5bbfdf!2sUniversity%20of%20Melbourne!5e0!3m2!1sen!2sau!4v1615074192284!5m2!1sen!2sau"
+                                    width="100%"
+                                    height="200"
+                                    style="border:0;"
+                                    allowfullscreen=""
+                                    loading="lazy"
+                                >
+                                </iframe>
+                            </div>
+                        </div>
+
+                        <!-- Online Venue -->
+                        <div
+                            class="bg-white p-6 rounded-lg border border-gray-300"
+                        >
+                            <div class="flex items-center mb-4">
+                                <svg
+                                    xmlns="http://www.w3.org/2000/svg"
+                                    class="h-6 w-6 text-blue-500 mr-2"
+                                    fill="none"
+                                    viewBox="0 0 24 24"
+                                    stroke="currentColor"
+                                >
+                                    <path
+                                        stroke-linecap="round"
+                                        stroke-linejoin="round"
+                                        stroke-width="2"
+                                        d="M15 10l4.553-2.276A2 2 0 0118 6.236V4a2 2 0 00-2-2H8a2 2 0 00-2 2v2.236a2 2 0 01-1.553 1.488L4 10m11 0l-1 2m-5-2l1 2m6 8H9m10 0h-4m-8 0H5a2 2 0 01-2-2v-2c0-1.591 1.389-3 3-3h12c1.611 0 3 1.409 3 3v2a2 2 0 01-2 2z"
+                                    />
+                                </svg>
+                                <h3 class="text-xl font-semibold">
+                                    Zoom Meeting
+                                </h3>
+                            </div>
+                            <p class="text-gray-600 mb-2">Online via Zoom</p>
+                            <a
+                                href="https://zoom.us/j/your-meeting-id"
+                                class="text-blue-500 hover:underline"
+                                >Join Zoom Meeting</a
+                            >
+                            <p class="text-gray-600 mt-4">
+                                Meeting ID: 123-456-789
+                            </p>
+                            <p class="text-gray-600">Passcode: 987654</p>
+                            <p class="text-gray-600 mt-4">
+                                Tanggal: 26 Oktober, 2024
+                            </p>
+                            <p class="text-gray-600">
+                                Jam: 08:00 WITA - 17:00 WITA
+                            </p>
+                        </div>
                     </div>
                 </div>
             </div>

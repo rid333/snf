@@ -6,7 +6,7 @@
 
 <div class="fixed bottom-4 right-4 z-50">
     <a
-        class="bg-blue-800 hover:bg-blue-600 text-white font-bold py-2 px-4 rounded-full shadow-lg"
+        class="bg-blue-800 hover:bg-blue-600 text-white font-semibold py-2 px-4 rounded-full shadow-lg"
         href="https://wa.me/6285399336938"
         target="_blank"
     >
