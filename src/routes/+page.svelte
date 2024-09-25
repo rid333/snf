@@ -4,6 +4,7 @@
     import Sri from "$lib/assets/suryani.jpeg";
     import Djati from "$lib/assets/djati.jpeg";
     import Tamfis from "$lib/assets/tamanfisika.jpg";
+    import Template from "$lib/assets/Template.docx";
 
     const scopes = [
         "Fisika Teori",
@@ -120,7 +121,7 @@
                     </svg>
                 </a>
                 <a
-                    href="src/lib/assets/Template.docx"
+                    href={Template}
                     download="Templat Makalah SNF 2024"
                     class="flex bg-blue-800 hover:bg-blue-900 text-sm text-white font-semibold p-2"
                     >Download Template
