@@ -267,7 +267,7 @@
                     <div
                         class="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:mx-auto sm:before:mx-0 before:bg-yellow-500"
                     >
-                        <h3 class="text-3xl font-semibold uppercase">
+                        <h3 class="text-2xl font-semibold uppercase">
                             Timeline
                         </h3>
                         <span
@@ -310,7 +310,9 @@
                     <div
                         class="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:mx-auto sm:before:mx-0 before:bg-blue-800"
                     >
-                        <h3 class="text-3xl font-semibold">Get in touch</h3>
+                        <h3 class="text-2xl font-semibold uppercase">
+                            Get in touch
+                        </h3>
                         <span
                             class="text-sm font-bold tracking-wider uppercase text-gray-600"
                             >Kontak kami</span
