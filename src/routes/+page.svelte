@@ -361,7 +361,9 @@
                     <div
                         class="text-center sm:text-left mb-14 before:block before:w-24 before:h-3 before:mb-5 before:mx-auto sm:before:mx-0 before:bg-blue-800"
                     >
-                        <h3 class="text-3xl font-semibold">Location</h3>
+                        <h3 class="text-3xl font-semibold uppercase">
+                            Location
+                        </h3>
                         <span
                             class="text-sm font-bold tracking-wider uppercase text-gray-600"
                             >Lokasi Seminar</span
