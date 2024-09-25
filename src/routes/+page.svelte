@@ -251,7 +251,7 @@
         <div class="grid grid-cols-2 lg:grid-cols-3 gap-10">
             {#each scopes as scope}
                 <div
-                    class="bg-blue-800 text-white lg:w-64 font-semibold text-xs lg:text-sm pl-4 p-2 shadow-md cursor-pointer"
+                    class="bg-blue-800 text-white lg:w-64 font-semibold text-xs lg:text-base pl-4 p-2 shadow-md cursor-pointer"
                 >
                     {scope}
                 </div>
@@ -322,7 +322,7 @@
                         <div
                             class="bg-white p-6 rounded-lg border border-gray-300"
                         >
-                            <h3 class="text-xl font-medium mb-2">
+                            <h3 class="font-medium mb-2">
                                 Ajeng Anggreny Ibrahim, S.Pd., M.Si.
                             </h3>
                             <p class="text-gray-600 mt-2">+62 853-9933-6938</p>
@@ -330,7 +330,7 @@
                         <div
                             class="bg-white p-6 rounded-lg border border-gray-300"
                         >
-                            <h3 class="text-xl font-medium mb-2">
+                            <h3 class="font-medium mb-2">
                                 Ayu Hardidanti Pratiwi, S.Pd.,M.Si
                             </h3>
                             <p class="text-gray-600 mt-2">+62 821-9447-8721</p>
@@ -338,7 +338,7 @@
                         <div
                             class="bg-white p-6 rounded-lg border border-gray-300"
                         >
-                            <h3 class="text-xl font-medium mb-2">E-Mail</h3>
+                            <h3 class="font-medium mb-2">E-Mail</h3>
                             <a
                                 href="mailto:hello@example.com"
                                 class="text-blue-500 hover:underline"
