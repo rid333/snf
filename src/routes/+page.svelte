@@ -6,6 +6,8 @@
     import Tamfis from "$lib/assets/tamanfisika.jpg";
     import Template from "$lib/assets/Template.docx";
 
+    import Speaker from "$lib/ui/Speaker/Speaker.svelte";
+
     const scopes = [
         "Fisika Teori",
         "Fisika Komputasi",
@@ -220,23 +222,11 @@
         </h1>
         <div class="flex flex-col lg:flex-row gap-x-24 gap-y-10 z-10">
             {#each speakers as speaker}
-                <div class="flex flex-col gap-y-1 lg:gap-y-4">
-                    <img
-                        src={speaker.image}
-                        alt={speaker.name}
-                        class="w-36 h-36 lg:w-60 lg:h-60 object-cover"
-                    />
-                    <div>
-                        <p
-                            class="font-semibold text-sm lg:text-base text-yellow-500"
-                        >
-                            {speaker.name}
-                        </p>
-                        <p class="text-gray-200 text-xs font-bold lg:text-sm">
-                            {speaker.title}
-                        </p>
-                    </div>
-                </div>
+                <Speaker
+                    name={speaker.name}
+                    image={speaker.image}
+                    title={speaker.title}
+                />
             {/each}
         </div>
     </section>
