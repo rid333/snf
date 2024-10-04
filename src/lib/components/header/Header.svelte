@@ -29,7 +29,7 @@
             <button
                 class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-4"
             >
-                Submit
+                Daftar
             </button>
         </a>
     </nav>
