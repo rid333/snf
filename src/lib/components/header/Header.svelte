@@ -25,7 +25,7 @@
             </li>
             <li><a href="/" class="hover:text-indigo-400">Tentang</a></li>
         </ul>
-        <a target="_blank" href="https://forms.gle/w7Z23vkLp3rkZ3cq8">
+        <a target="_blank" href="https://forms.gle/m2EqjTxS3FzaLrg36">
             <button
                 class="bg-blue-800 hover:bg-blue-900 text-white font-bold py-2 px-4"
             >
